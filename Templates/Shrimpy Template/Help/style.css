@@ -1,0 +1,217 @@
+/* CSS Reset */
+*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td {
+    margin: 0;
+    padding: 0; 
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset, img {
+    border: 0;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: 400;
+}
+ol, ul, li {
+    list-style: none;
+}
+caption, th {
+    text-align: left;
+}
+q:before, q:after {
+    content: '';
+}
+* {
+    outline: none;
+}
+strong {
+    font-weight: 700;
+}
+em {
+    font-style: italic;
+}
+a img {
+    border: none;
+}
+/* clearfix */
+.clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    display: inline-block;
+}
+/* Hide from IE Mac \*/
+.clearfix {
+    display: block;
+}
+/* End hide from IE Mac */
+.none {
+    display: none;
+}
+.clear {
+    clear: both;
+    padding-bottom: 20px;
+}
+/* End Clearfix */
+
+
+/* Tab */
+.tab-set ul.tab-titles {
+    clear: both;
+    margin-bottom: 0;
+    float: left;
+}
+.tab-set .tab-titles li {
+    float: left;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 -1px 0 0;
+    padding: 13px 15px;
+    cursor: pointer;
+    background-color: #fff;
+    position: relative;
+    top: 1px;
+    z-index: 1;
+    color: #777;
+    text-align: left;
+	background: #f1f1f1;
+	
+}
+.tab-set .tab-titles li i {
+    padding-right: 10px;
+}
+.tab-set .tab-titles li.current {
+    position: relative;
+    z-index: 3;
+    font-weight: bold;
+    color: #444;
+	background: #fff;
+}    
+.tab-content {
+    padding: 20px !important;
+    border: 1px solid #eee; 
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    clear: both;
+    color: #444;    
+}
+.tab-content p {
+    color: #444 !important; 
+}
+.tab-vertical .tab-titles {
+    float: left;
+    width: 20%;
+}
+.tab-vertical .tab-titles li {
+    float: none;
+    display: block;
+    border: 1px solid #f5f5f5;
+    margin: 0 0 -1px 0;
+    top: 0;
+    padding: 13px 15px;
+}
+.tab-vertical .tab-content {
+    width: 80%;
+    float: right;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    clear: none;
+}
+.tab-vertical.tab-right .tab-titles {
+    float: right;
+}
+.tab-vertical.tab-right .tab-content {
+    float: left;
+}
+.tab-vertical.tab-right .tab-titles li {
+    border-left: none;    
+    right: 1px;
+}
+.tab-vertical.tab-left .tab-titles li {
+    border-right: none;    
+    left: 1px;
+}
+/*
+Content Styles
+*/
+body {
+	padding: 15px;
+	font: normal normal 13px/20px Arial, Helvetica, sans-serif;
+}
+ul {
+	padding-left: 25px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+#logo {
+	display:block;
+	margin: 10px auto;
+	border: none;
+	padding: 0;
+}
+#welcome {
+	text-align: center;
+	font: normal bold 32px/72px arial;
+	margin-bottom: 35px;
+	color: #333;
+}
+h4 {
+	font: normal bold 24px/45px Arial, Helvetica, sans-serif;
+	margin-bottom: 12px;
+}
+p {
+	margin-bottom: 20px;
+}
+img {
+	display: block;
+	margin: 20px auto;
+	padding: 1px;
+	border: 1px solid #eee;
+	max-width: 95%;
+}
+.tab-content ul {
+	list-style: inside;
+	list-style-type: disc;
+	margin-bottom: 20px;
+}
+.tab-content ol {
+	list-style: inside;
+	list-style-type: decimal;
+	margin-bottom: 30px;
+}
+.tab-content ul li, .tab-content ol li {
+	list-style: inherit;
+	line-height: 25px;
+}
+code {
+ background: #eee;
+}
+#scrollup, #scrollup:visited {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99999;
+    background-color: #202020;
+    width: 40px;
+    height: 31px;
+    color: #fff;   
+    font-size: 14px;
+    text-align: center;
+    padding-top: 9px;
+    opacity: 0.7; 
+    display: none;
+	text-decoration: none;
+}
+#scrollup:hover  {
+    opacity: 1;
+    color: #fff !important ;
+}
