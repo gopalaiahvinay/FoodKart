@@ -1,7 +1,8 @@
 <template name="basicLayout">
     <div id="main">
-        {{> sideMenu}}
-        {{> yield}}
+        {{> sideMenu}}        
+        {{> yield}} <!-- Loads the template based on the route (URL) -->
+        {{> leftSideMenu}}
             
         <footer>
             {{> footer}}
